@@ -7,7 +7,7 @@ bot = Bot("5718308924:AAFDDxwBvSoOXZJHOZICW75RZPLD2pSO668")
 
 
 def send_random_cat():
-    url = f'https://cataas.com/cat?t=${time.time()}'
+    url = f'https://yandex.ru/images/search?from=tabbar&text=skyrim{time.time()}'
     bot.send_photo(chat_id, url)
 
 
