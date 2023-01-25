@@ -12,16 +12,19 @@ try:
         port=8889,
         cursorclass=pymysql.cursors.DictCursor)
     print('succ')
-
     try:
-        with connection.cursor as cursor:
-            create_table_query = "CREATE TABLE 'users'(id int AUTO_INCREMENT, name varachar(32), password varcar(32), email varchar(32), PRIMARY KEY(id));"
-                                
-            cursor.execute(create_table_query)
-            print('table succ!!')
-
+        with connection.cursor() as cursor:
+            cursor.execute("SHOW DATABASES;")
+            print(cursor.fetchall())
+            select_all_rows = "SELECT * FROM exam_users"
+            cursor.execute(select_all_rows)
+            rows=cursor.fetchall()
+            for row in rows:
+                print(row)
+            print('+'*20)
     finally:
         connection.close()
+
 
 except Exception as ex:
     print("Connection refused...")

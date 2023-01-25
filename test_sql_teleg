@@ -1,0 +1,53 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+ 
+import pymysql
+import pymysql.cursors
+import time
+from telegram import Bot
+
+
+chat_id = 642411623 #замените на свое значение, подробнее ниже
+bot = Bot("5718308924:AAFDDxwBvSoOXZJHOZICW75RZPLD2pSO668")
+
+def send_random_cat():
+    try:
+        connection = pymysql.connect(host='localhost',
+            user='root',
+            password='root',
+            db='test_bd',
+            port=8889,
+            cursorclass=pymysql.cursors.DictCursor)
+        print('succ')
+        try:
+            with connection.cursor() as cursor:
+                #cursor.execute("SHOW DATABASES;")
+                #print(cursor.fetchall())
+                select_all_rows = "SELECT * FROM exam_users"
+                cursor.execute(select_all_rows)
+                rows=cursor.fetchall()
+                for row in rows:
+                    bot.send_message(chat_id, '+'*20)
+                    for i,r in row.items():
+                        print(f'{i} = {r}')
+                        bot.send_message(chat_id, f'{i} = {r}')
+                        
+                    bot.send_message(chat_id, '+'*20)
+                print('+'*20)
+        
+        finally:
+            connection.close()
+
+
+    except Exception as ex:
+        print("Connection refused...")
+        print(ex)
+
+def main() -> None:
+    send_random_cat()
+    print('Cat has been sent')
+    
+
+
+if __name__ == "__main__":
+    main()
