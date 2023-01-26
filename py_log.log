@@ -1,0 +1,10 @@
+2023-01-27 01:08:15,667 INFO start_bot
+2023-01-27 01:08:15,668 INFO Scheduler started
+2023-01-27 01:10:18,473 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 01:10:18,475 INFO Scheduler has been shut down
+2023-01-27 01:10:18,769 WARNING Exiting immediately!
+2023-01-27 01:10:38,001 INFO start_bot
+2023-01-27 01:10:38,002 INFO Scheduler started
+2023-01-27 01:10:42,152 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 01:10:42,153 INFO Scheduler has been shut down
+2023-01-27 01:10:42,456 WARNING Exiting immediately!
