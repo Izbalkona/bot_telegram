@@ -50,32 +50,37 @@ def stop(update, context):
     
     
 conv_handler = ConversationHandler(
-    # Точка входа в диалог.
-    # В данном случае — команда /start. Она задаёт первый вопрос.
-    entry_points=[CommandHandler('start', start)],
+        # Точка входа в диалог.
+        # В данном случае — команда /start. Она задаёт первый вопрос.
+        entry_points=[CommandHandler('start', start)],
+        
+        # Словарь состояний внутри диалога. 
+        # Наш вариант с двумя обработчиками,
+        # фильтрующими текстовые сообщения.
+        states={
+        # Функция читает ответ на первый вопрос и задаёт второй.
+        1: [MessageHandler(Filters.text, first_response)],
+        # Функция читает ответ на второй вопрос и завершает диалог.
+        2: [MessageHandler(Filters.text, second_response)]
+        },
+        
+        # Точка прерывания диалога. В данном случае — команда /stop.
+        fallbacks=[CommandHandler('stop', stop)]
+    )
+
+def main():
+    updater = Updater('5718308924:AAFDDxwBvSoOXZJHOZICW75RZPLD2pSO668')
+
+    dp = updater.dispatcher
     
-    # Словарь состояний внутри диалога. 
-    # Наш вариант с двумя обработчиками,
-    # фильтрующими текстовые сообщения.
-    states={
-    # Функция читает ответ на первый вопрос и задаёт второй.
-    1: [MessageHandler(Filters.text, first_response)],
-    # Функция читает ответ на второй вопрос и завершает диалог.
-    2: [MessageHandler(Filters.text, second_response)]
-    },
-    
-    # Точка прерывания диалога. В данном случае — команда /stop.
-    fallbacks=[CommandHandler('stop', stop)]
-)
 
-updater = Updater('5718308924:AAFDDxwBvSoOXZJHOZICW75RZPLD2pSO668')
+    dp.add_handler(conv_handler)
+    dp.add_handler(CommandHandler('start', start))
+    dp.add_handler(CommandHandler('stop', stop))
 
-dp = updater.dispatcher
+    updater.start_polling() # цикл
+    print('Started')
+    updater.idle()
 
-dp.add_handler(conv_handler)
-dp.add_handler(CommandHandler('start', start))
-dp.add_handler(CommandHandler('stop', stop))
-
-updater.start_polling()
-
-updater.idle()
+if __name__ == "__main__":
+    main()

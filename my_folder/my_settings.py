@@ -14,3 +14,5 @@ updater = Updater("5718308924:AAFDDxwBvSoOXZJHOZICW75RZPLD2pSO668") #connect Tel
 
 logging.basicConfig(level=logging.INFO, filename="py_log.log",
                     format="%(asctime)s %(levelname)s %(message)s")# настройка логов
+
+tele_token="5718308924:AAFDDxwBvSoOXZJHOZICW75RZPLD2pSO668"

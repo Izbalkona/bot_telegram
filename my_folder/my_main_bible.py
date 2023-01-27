@@ -21,9 +21,8 @@ def send_photo(bot, chat_id): #отправляет фотку
     bot.send_photo(chat_id, url)
 
 
-def tprint(saw): #send message
-    bot.send_message(chat_id, saw,  parse_mode='html' )
-
+def tprint(user_message): #send message
+    bot.send_message(chat_id, user_message,  parse_mode='html' )
 
 def get_greeting_filter(greeting: str) -> BaseFilter:
     return Filters.regex(re.compile(f'^{greeting}$', re.IGNORECASE)) & Filters.update.message
@@ -32,20 +31,10 @@ def get_greeting_filter(greeting: str) -> BaseFilter:
 def ru(update: Update, context: CallbackContext) -> None: #callBack
     update.message.reply_text('привет')
 
-
-def rem_pas(update: Update, context: CallbackContext) -> None: #callBack
-    
-    update.message.reply_text('твой пароль: '+ passw)
-    tprint(time_now())
     
 def help_command(update: Update, context: CallbackContext) -> None: #описание функций
     update.message.reply_text("""
-    /registration - регистрация нового пльзователя
-    Бот может здороваться на разных языках.
-    Список поддерживаемых приветствий:
-    - привет - русский
-    - hello - английский
-    - hola - испанский
+    /start можно запросить данные аккаунта
     """)
 
 def registration_command(update: Update, context: CallbackContext) -> None: #описание функций

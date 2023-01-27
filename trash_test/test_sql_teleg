@@ -5,7 +5,12 @@ import pymysql
 import pymysql.cursors
 import time
 from telegram import Bot
-
+user_var = 'words'
+user_name = 'dimon'
+user_name2 = 'din'
+user_mail = 'qwer'
+user_password = '123'
+user_table = 'exam_users'
 
 chat_id = 642411623 #замените на свое значение, подробнее ниже
 bot = Bot("5718308924:AAFDDxwBvSoOXZJHOZICW75RZPLD2pSO668")
@@ -23,18 +28,21 @@ def send_random_cat():
             with connection.cursor() as cursor:
                 #cursor.execute("SHOW DATABASES;")
                 #print(cursor.fetchall())
-                select_all_rows = "SELECT * FROM exam_users"
-                cursor.execute(select_all_rows)
-                rows=cursor.fetchall()
-                for row in rows:
-                    bot.send_message(chat_id, '+'*20)
-                    for i,r in row.items():
-                        print(f'{i} = {r}')
-                        bot.send_message(chat_id, f'{i} = {r}')
-                        
-                    bot.send_message(chat_id, '+'*20)
+                select_all_rows = f"SELECT {user_var}, password FROM {user_table} where name = '{user_name}'"
+                per = cursor.execute(select_all_rows)
+                results = cursor.fetchall()
+                #print('pas = ' + str(results[0]["password"]))
+                if results == ():
+                    print('Такого пользователя нет')
+                elif str(results[0]["password"]) != user_password:
+                    print(f"неверный пароль")
+                elif results != ():
+                    print(f"ваш запрос: {results[0][user_var]}")
+                else:
+                    print('нет такого')
+                #print(results['dimon'])
+                #bot.send_message(select_all_rows)
                 print('+'*20)
-        
         finally:
             connection.close()
 

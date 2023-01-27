@@ -3,33 +3,35 @@
  
 import logging
 
-from my_main_bible import *
+from my_main_bible import tprint
 
 import pymysql
 import pymysql.cursors
 
-user_name='din'
-user_var='mail'
-user_mail='adeeer'
 
+user_table = 'exam_users'
 
-def user_request_cell(cursor, user_name, user_var): #выводит любую информаци о пользователе по ключу user_name 
-    select_all_rows = "SELECT * FROM exam_users"
-    cursor.execute(select_all_rows)
-    user_date=cursor.fetchall()
+def user_request_cell(cursor, user_name, user_password, user_var): #выводит любую информаци о пользователе по ключу user_name 
     try:
-        for id_user in user_date:
-            for i,r in id_user.items():
-                if r == user_name:
-                    tprint(f'{id_user[user_var]}')
-        print('+'*20)
+        select_all_rows = f"SELECT {user_var}, password FROM {user_table} where name = '{user_name}'"
+        per = cursor.execute(select_all_rows)
+        results = cursor.fetchall()
+        if results == ():
+            message = 'Такого пользователя нет'
+        elif str(results[0]["password"]) != user_password:
+            message = f"неверный пароль"
+        elif results != ():
+            message =f"ваш запрос: {results[0][user_var]}"
+        else:
+            message = 'нет такого'
+            tprint('нет такого')
+        tprint(message)
+        logging.info(f"203: пользователь ({user_name}) запрашивал данные ({user_var}) : результат ({message})")
     except Exception as req_err:
         print("Connection refused...")
         print(str(req_err))
         tprint("Connection refused...")
         tprint(str(req_err))
-    finally:
-            tprint(f"Ваш запрос {user_name}: {user_var}")
 
 
 
@@ -44,7 +46,7 @@ def my_sql_insert(cursor, user_mail): #добавляет нового поль�
 
 
 
-def check_sqlbase(): #связь my_main с sql
+def check_sqlbase(user_name, user_password, user_var): #связь my_main с sql
     try:
         connection = pymysql.connect(host='localhost',
             user='root',
@@ -55,8 +57,8 @@ def check_sqlbase(): #связь my_main с sql
         print('succ')
         try:
             with connection.cursor() as cursor:
-                user_request_cell(cursor, user_name, user_var) #выводит любую информаци о пользователе по ключу user_name
-                my_sql_insert(cursor, user_mail) #добавляет нового пользователя
+                user_request_cell(cursor, user_name, user_password, user_var) #выводит любую информаци о пользователе по ключу user_name и соотвествию user_password
+                #my_sql_insert(cursor, user_mail) #добавляет нового пользователя
         finally:
             connection.close()
 
