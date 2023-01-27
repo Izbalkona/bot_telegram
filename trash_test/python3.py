@@ -54,7 +54,7 @@ def main() -> None:
     updater.dispatcher.add_handler(CallbackQueryHandler(flip_a_coin_again, pattern='^flip_a_coin_again'))
     updater.dispatcher.add_handler(CallbackQueryHandler(new_random_number, pattern='^new_random_number'))
     updater.dispatcher.add_handler(
-        MessageHandler(Filters.update.message & Filters.text('Подбросить ммонетку'), flip_a_coin))
+        MessageHandler(Filters.update.message & Filters.text('Подбросить монетку'), flip_a_coin))
     updater.dispatcher.add_handler(
         MessageHandler(Filters.update.message & Filters.text('Случайное число'), random_number))
     updater.dispatcher.add_handler(TypeHandler(Update, ask_what_to_do))
