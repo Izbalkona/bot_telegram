@@ -1,8 +1,11 @@
 import re
 import time
 import datetime
+
+from my_settings import *
+
 from telegram import Bot, Update
-from telegram.ext import Updater, CallbackContext, CommandHandler, Filters, MessageHandler, BaseFilter
+from telegram.ext import Updater, CallbackContext, CommandHandler, Filters, MessageHandler, BaseFilter, TypeHandler
 
 chat_id = 642411623 
 bot = Bot("5718308924:AAFDDxwBvSoOXZJHOZICW75RZPLD2pSO668")
@@ -19,7 +22,7 @@ def send_photo(bot, chat_id): #отправляет фотку
 
 
 def tprint(saw): #send message
-    bot.send_message(chat_id, saw)
+    bot.send_message(chat_id, saw,  parse_mode='html' )
 
 
 def get_greeting_filter(greeting: str) -> BaseFilter:
@@ -31,6 +34,7 @@ def ru(update: Update, context: CallbackContext) -> None: #callBack
 
 
 def rem_pas(update: Update, context: CallbackContext) -> None: #callBack
+    
     update.message.reply_text('твой пароль: '+ passw)
     tprint(time_now())
     
@@ -47,3 +51,7 @@ def help_command(update: Update, context: CallbackContext) -> None: #описа�
 def registration_command(update: Update, context: CallbackContext) -> None: #описание функций
     update.message.reply_text(""" Введите ваш логин:
     """)
+
+def echo(update: Update, context: CallbackContext) -> None: #регистрация любого сообщения
+    tprint(f'Ваш запрос - <b>({update.message.text})</b> - не понятен для меня')
+    logging.info(f'нераспознанный текст {update.message.text}')

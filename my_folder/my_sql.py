@@ -1,17 +1,19 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
  
-import pymysql
-import pymysql.cursors
+import logging
 
 from my_main_bible import *
 
-user_name='dima'
+import pymysql
+import pymysql.cursors
+
+user_name='din'
 user_var='mail'
 user_mail='adeeer'
 
 
-def user_request_cell(cursor, name, user_var):
+def user_request_cell(cursor, user_name, user_var): #выводит любую информаци о пользователе по ключу user_name 
     select_all_rows = "SELECT * FROM exam_users"
     cursor.execute(select_all_rows)
     user_date=cursor.fetchall()
@@ -27,18 +29,18 @@ def user_request_cell(cursor, name, user_var):
         tprint("Connection refused...")
         tprint(str(req_err))
     finally:
-            tprint(f"Ваш запрос {name}: {user_var}")
+            tprint(f"Ваш запрос {user_name}: {user_var}")
 
 
 
-def my_sql_insert(cursor, user_mail): #позволяет создать нового пользователя
+def my_sql_insert(cursor, user_mail): #добавляет нового пользователя
     try:
         cursor.execute("INSERT INTO exam_users (name, password,mail,date) VALUES ('dima','pkol111', %s ,'23111') ;", user_mail)
     except Exception as req_err:
         print("Connection refused...")
         print(str(req_err))
-        tprint("Connection refused...")
         tprint(str(req_err))
+        logging.info(f'ошибка = {req_err}')
 
 
 

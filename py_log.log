@@ -1,10 +1,694 @@
-2023-01-27 01:08:15,667 INFO start_bot
-2023-01-27 01:08:15,668 INFO Scheduler started
-2023-01-27 01:10:18,473 INFO Received signal 2 (SIGINT), stopping...
-2023-01-27 01:10:18,475 INFO Scheduler has been shut down
-2023-01-27 01:10:18,769 WARNING Exiting immediately!
-2023-01-27 01:10:38,001 INFO start_bot
-2023-01-27 01:10:38,002 INFO Scheduler started
-2023-01-27 01:10:42,152 INFO Received signal 2 (SIGINT), stopping...
-2023-01-27 01:10:42,153 INFO Scheduler has been shut down
-2023-01-27 01:10:42,456 WARNING Exiting immediately!
+2023-01-27 01:40:20,382 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 01:40:20,453 INFO start_bot
+2023-01-27 01:40:20,455 INFO Scheduler started
+2023-01-27 01:41:26,239 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 01:41:26,239 INFO Scheduler has been shut down
+2023-01-27 01:41:26,526 WARNING Exiting immediately!
+2023-01-27 02:01:09,176 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 02:01:09,256 INFO start_bot
+2023-01-27 02:01:09,258 INFO Scheduler started
+2023-01-27 02:02:49,899 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:02:49,899 INFO Scheduler has been shut down
+2023-01-27 02:02:50,162 WARNING Exiting immediately!
+2023-01-27 02:02:52,678 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 02:02:52,757 INFO start_bot
+2023-01-27 02:02:52,758 INFO Scheduler started
+2023-01-27 02:02:58,191 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main.py", line 21, in echo
+    update.message.reply_text('не понял:' + Update)
+                              ~~~~~~~~~~~~^~~~~~~~
+TypeError: can only concatenate str (not "type") to str
+2023-01-27 02:03:08,079 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main.py", line 21, in echo
+    update.message.reply_text('не понял:' + Update)
+                              ~~~~~~~~~~~~^~~~~~~~
+TypeError: can only concatenate str (not "type") to str
+2023-01-27 02:03:17,395 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main.py", line 21, in echo
+    update.message.reply_text('не понял:' + Update)
+                              ~~~~~~~~~~~~^~~~~~~~
+TypeError: can only concatenate str (not "type") to str
+2023-01-27 02:04:24,136 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:04:24,136 INFO Scheduler has been shut down
+2023-01-27 02:04:24,383 WARNING Exiting immediately!
+2023-01-27 02:04:27,141 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 02:04:27,246 INFO start_bot
+2023-01-27 02:04:27,247 INFO Scheduler started
+2023-01-27 02:05:53,406 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:05:53,406 INFO Scheduler has been shut down
+2023-01-27 02:05:53,677 WARNING Exiting immediately!
+2023-01-27 02:05:58,644 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 02:05:58,727 INFO start_bot
+2023-01-27 02:05:58,728 INFO Scheduler started
+2023-01-27 02:07:00,180 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:07:00,180 INFO Scheduler has been shut down
+2023-01-27 02:07:00,452 WARNING Exiting immediately!
+2023-01-27 02:07:07,607 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 02:07:07,704 INFO start_bot
+2023-01-27 02:07:07,705 INFO Scheduler started
+2023-01-27 02:07:15,296 INFO d
+2023-01-27 02:07:16,495 INFO d
+2023-01-27 02:11:02,822 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:11:02,822 INFO Scheduler has been shut down
+2023-01-27 02:11:03,396 WARNING Exiting immediately!
+2023-01-27 02:11:06,435 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 02:11:06,509 INFO start_bot
+2023-01-27 02:11:06,511 INFO Scheduler started
+2023-01-27 02:11:11,927 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main.py", line 23, in echo
+    print(update.chat.username)
+          ^^^^^^^^^^^
+AttributeError: 'Update' object has no attribute 'chat'
+2023-01-27 02:14:39,652 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:14:39,653 INFO Scheduler has been shut down
+2023-01-27 02:14:40,083 WARNING Exiting immediately!
+2023-01-27 02:14:43,135 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 02:14:43,215 INFO start_bot
+2023-01-27 02:14:43,217 INFO Scheduler started
+2023-01-27 02:14:48,147 INFO d
+2023-01-27 02:16:28,759 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:16:28,759 INFO Scheduler has been shut down
+2023-01-27 02:16:29,078 WARNING Exiting immediately!
+2023-01-27 02:16:31,722 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 02:16:31,802 INFO start_bot
+2023-01-27 02:16:31,803 INFO Scheduler started
+2023-01-27 02:16:36,510 INFO d
+2023-01-27 02:17:19,732 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:17:19,733 INFO Scheduler has been shut down
+2023-01-27 02:17:19,948 WARNING Exiting immediately!
+2023-01-27 02:17:23,798 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 02:17:23,883 INFO start_bot
+2023-01-27 02:17:23,884 INFO Scheduler started
+2023-01-27 02:17:28,621 INFO None
+2023-01-27 02:17:31,199 INFO None
+2023-01-27 02:17:48,259 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:17:48,260 INFO Scheduler has been shut down
+2023-01-27 02:17:48,467 WARNING Exiting immediately!
+2023-01-27 02:18:42,804 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 02:18:42,888 INFO start_bot
+2023-01-27 02:18:42,889 INFO Scheduler started
+2023-01-27 02:18:46,102 INFO izbalkona : d
+2023-01-27 02:19:32,479 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:19:32,479 INFO Scheduler has been shut down
+2023-01-27 02:19:32,758 WARNING Exiting immediately!
+2023-01-27 02:19:36,452 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 02:19:36,645 INFO start_bot
+2023-01-27 02:19:36,646 INFO Scheduler started
+2023-01-27 02:19:44,389 INFO izbalkona : привет
+2023-01-27 02:22:13,993 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:22:13,993 INFO Scheduler has been shut down
+2023-01-27 02:22:14,303 WARNING Exiting immediately!
+2023-01-27 02:22:18,716 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 02:22:18,795 INFO start_bot
+2023-01-27 02:22:18,796 INFO Scheduler started
+2023-01-27 02:22:25,701 INFO izbalkona : сс
+2023-01-27 02:38:34,357 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:38:34,358 INFO Scheduler has been shut down
+2023-01-27 02:38:34,581 WARNING Exiting immediately!
+2023-01-27 02:38:37,103 INFO start_bot
+2023-01-27 02:38:37,104 INFO Scheduler started
+2023-01-27 02:40:25,666 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:40:25,666 INFO Scheduler has been shut down
+2023-01-27 02:40:26,001 WARNING Exiting immediately!
+2023-01-27 02:40:28,301 INFO start_bot
+2023-01-27 02:40:28,302 INFO Scheduler started
+2023-01-27 02:41:05,190 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:41:05,190 INFO Scheduler has been shut down
+2023-01-27 02:41:05,520 WARNING Exiting immediately!
+2023-01-27 02:41:08,711 INFO start_bot
+2023-01-27 02:41:08,713 INFO Scheduler started
+2023-01-27 02:42:17,446 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:42:17,446 INFO Scheduler has been shut down
+2023-01-27 02:42:17,886 WARNING Exiting immediately!
+2023-01-27 02:43:27,258 INFO start_bot
+2023-01-27 02:43:27,259 INFO Scheduler started
+2023-01-27 02:44:27,427 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:44:27,427 INFO Scheduler has been shut down
+2023-01-27 02:44:27,714 WARNING Exiting immediately!
+2023-01-27 02:44:37,603 INFO start_bot
+2023-01-27 02:44:37,604 INFO Scheduler started
+2023-01-27 02:46:44,375 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:46:44,375 INFO Scheduler has been shut down
+2023-01-27 02:46:44,686 WARNING Exiting immediately!
+2023-01-27 02:47:21,180 INFO start_bot
+2023-01-27 02:47:21,181 INFO Scheduler started
+2023-01-27 02:50:36,191 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:50:36,191 INFO Scheduler has been shut down
+2023-01-27 02:50:36,471 WARNING Exiting immediately!
+2023-01-27 02:50:39,250 INFO start_bot
+2023-01-27 02:50:39,251 INFO Scheduler started
+2023-01-27 02:51:01,535 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:51:01,535 INFO Scheduler has been shut down
+2023-01-27 02:51:01,870 WARNING Exiting immediately!
+2023-01-27 02:51:04,516 INFO start_bot
+2023-01-27 02:51:04,517 INFO Scheduler started
+2023-01-27 02:51:25,430 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:51:25,430 INFO Scheduler has been shut down
+2023-01-27 02:51:25,725 WARNING Exiting immediately!
+2023-01-27 02:52:09,578 INFO start_bot
+2023-01-27 02:52:09,579 INFO Scheduler started
+2023-01-27 02:54:07,514 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:54:07,514 INFO Scheduler has been shut down
+2023-01-27 02:54:07,777 WARNING Exiting immediately!
+2023-01-27 02:54:12,140 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 02:54:12,215 INFO start_bot
+2023-01-27 02:54:12,216 INFO Scheduler started
+2023-01-27 02:56:27,654 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:56:27,654 INFO Scheduler has been shut down
+2023-01-27 02:56:28,053 WARNING Exiting immediately!
+2023-01-27 02:56:30,607 INFO start_bot
+2023-01-27 02:56:30,608 INFO Scheduler started
+2023-01-27 02:56:39,549 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:56:39,549 INFO Scheduler has been shut down
+2023-01-27 02:56:39,852 WARNING Exiting immediately!
+2023-01-27 02:56:43,302 INFO start_bot
+2023-01-27 02:56:43,304 INFO Scheduler started
+2023-01-27 02:56:51,468 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 02:56:51,468 INFO Scheduler has been shut down
+2023-01-27 02:56:51,853 WARNING Exiting immediately!
+2023-01-27 02:56:54,401 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 02:56:54,491 INFO start_bot
+2023-01-27 02:56:54,492 INFO Scheduler started
+2023-01-27 03:03:09,349 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 03:03:09,349 INFO Scheduler has been shut down
+2023-01-27 03:03:09,645 WARNING Exiting immediately!
+2023-01-27 03:03:31,693 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 03:03:31,771 INFO start_bot
+2023-01-27 03:03:31,773 INFO Scheduler started
+2023-01-27 03:05:50,343 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 03:05:50,343 INFO Scheduler has been shut down
+2023-01-27 03:05:50,622 WARNING Exiting immediately!
+2023-01-27 03:05:53,425 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 03:05:53,502 INFO start_bot
+2023-01-27 03:05:53,503 INFO Scheduler started
+2023-01-27 03:06:04,424 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main.py", line 22, in echo
+    ret = updater.dispatcher.add_handler(TypeHandler(Update))
+                                         ^^^^^^^^^^^^^^^^^^^
+TypeError: TypeHandler.__init__() missing 1 required positional argument: 'callback'
+2023-01-27 03:06:56,996 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 03:06:56,997 INFO Scheduler has been shut down
+2023-01-27 03:06:57,276 WARNING Exiting immediately!
+2023-01-27 03:06:59,505 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 03:06:59,582 INFO start_bot
+2023-01-27 03:06:59,584 INFO Scheduler started
+2023-01-27 03:07:37,537 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main.py", line 22, in echo
+    updater.dispatcher.add_handler(TypeHandler(Update))
+                                   ^^^^^^^^^^^^^^^^^^^
+TypeError: TypeHandler.__init__() missing 1 required positional argument: 'callback'
+2023-01-27 03:08:26,921 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 03:08:26,921 INFO Scheduler has been shut down
+2023-01-27 03:08:27,337 WARNING Exiting immediately!
+2023-01-27 03:08:31,280 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 03:08:31,368 INFO start_bot
+2023-01-27 03:08:31,369 INFO Scheduler started
+2023-01-27 03:08:45,633 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main.py", line 22, in echo
+    updater.dispatcher.add_handler(TypeHandler(Update))
+                                   ^^^^^^^^^^^^^^^^^^^
+TypeError: TypeHandler.__init__() missing 1 required positional argument: 'callback'
+2023-01-27 03:09:16,583 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 03:09:16,583 INFO Scheduler has been shut down
+2023-01-27 03:09:16,895 WARNING Exiting immediately!
+2023-01-27 03:09:23,645 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 03:09:23,731 INFO start_bot
+2023-01-27 03:09:23,732 INFO Scheduler started
+2023-01-27 03:09:32,630 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main.py", line 23, in echo
+    updater.dispatcher.add_handler(TypeHandler(Update))
+                                   ^^^^^^^^^^^^^^^^^^^
+TypeError: TypeHandler.__init__() missing 1 required positional argument: 'callback'
+2023-01-27 05:15:57,078 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/packages/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main.py", line 29, in echo
+    def main() -> None:
+            ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/message.py", line 912, in reply_text
+    return self.bot.send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 133, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 525, in send_message
+    return self._message(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/extbot.py", line 202, in _message
+    result = super()._message(
+             ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 339, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 298, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2023-01-27 05:15:57,909 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 259, in _request_wrapper
+    resp = self._con_pool.request(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 68, in request
+    return self.request_encode_body(method, url, fields=fields,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/poolmanager.py", line 244, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 665, in urlopen
+    retries = retries.increment(method, url, error=e, _pool=self,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/util/retry.py", line 347, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/packages/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 614, in urlopen
+    httplib_response = self._make_request(conn, method, url,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 402, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/vendor/ptb_urllib3/urllib3/connectionpool.py", line 398, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+telegram.vendor.ptb_urllib3.urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main.py", line 21, in echo
+    tprint('Укажите ваш логин: ')
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main_bible.py", line 24, in tprint
+    bot.send_message(chat_id, saw)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 133, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 525, in send_message
+    return self._message(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 339, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 298, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 265, in _request_wrapper
+    raise NetworkError(f'urllib3 HTTPError {error}') from error
+telegram.error.NetworkError: urllib3 HTTPError ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2023-01-27 13:59:17,181 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 13:59:17,181 INFO Scheduler has been shut down
+2023-01-27 13:59:17,428 WARNING Exiting immediately!
+2023-01-27 13:59:22,280 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 13:59:22,364 INFO start_bot
+2023-01-27 13:59:22,365 INFO Scheduler started
+2023-01-27 13:59:35,252 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 13:59:35,252 INFO Scheduler has been shut down
+2023-01-27 13:59:35,540 WARNING Exiting immediately!
+2023-01-27 14:00:38,286 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 14:00:38,463 INFO start_bot
+2023-01-27 14:00:38,464 INFO Scheduler started
+2023-01-27 14:03:11,816 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 14:03:11,816 INFO Scheduler has been shut down
+2023-01-27 14:03:12,160 WARNING Exiting immediately!
+2023-01-27 14:06:43,609 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 14:06:43,695 INFO start_bot
+2023-01-27 14:06:43,696 INFO Scheduler started
+2023-01-27 14:06:48,860 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main.py", line 20, in echo
+    tprint(f'Ваш <b>запрос - {update.message.text}</b> - не понятен для меня', parse_mode='html' )
+TypeError: tprint() got an unexpected keyword argument 'parse_mode'
+2023-01-27 14:06:53,528 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main.py", line 20, in echo
+    tprint(f'Ваш <b>запрос - {update.message.text}</b> - не понятен для меня', parse_mode='html' )
+TypeError: tprint() got an unexpected keyword argument 'parse_mode'
+2023-01-27 14:13:55,644 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 14:13:55,644 INFO Scheduler has been shut down
+2023-01-27 14:13:55,939 WARNING Exiting immediately!
+2023-01-27 14:13:58,531 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 14:13:58,702 INFO start_bot
+2023-01-27 14:13:58,703 INFO Scheduler started
+2023-01-27 14:15:51,761 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 14:15:51,761 INFO Scheduler has been shut down
+2023-01-27 14:15:52,048 WARNING Exiting immediately!
+2023-01-27 14:15:55,748 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 14:15:55,838 INFO start_bot
+2023-01-27 14:15:55,840 INFO Scheduler started
+2023-01-27 14:15:59,704 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main.py", line 20, in echo
+    tprint(f'Ваш запрос - <font color="blue"><b>{update.message.text}</b></font> - не понятен для меня')
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main_bible.py", line 24, in tprint
+    bot.send_message(chat_id, saw,  parse_mode='html' )
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 133, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 525, in send_message
+    return self._message(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 339, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 298, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: unsupported start tag "font" at byte offset 22
+2023-01-27 14:16:40,919 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 14:16:40,919 INFO Scheduler has been shut down
+2023-01-27 14:16:41,230 WARNING Exiting immediately!
+2023-01-27 14:16:43,250 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 14:16:43,349 INFO start_bot
+2023-01-27 14:16:43,351 INFO Scheduler started
+2023-01-27 14:16:48,382 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main.py", line 20, in echo
+    tprint(f'Ваш запрос - <font color="blue">{update.message.text}</font> - не понятен для меня')
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main_bible.py", line 24, in tprint
+    bot.send_message(chat_id, saw,  parse_mode='html' )
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 133, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 525, in send_message
+    return self._message(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 339, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 298, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: unsupported start tag "font" at byte offset 22
+2023-01-27 14:16:50,102 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main.py", line 20, in echo
+    tprint(f'Ваш запрос - <font color="blue">{update.message.text}</font> - не понятен для меня')
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main_bible.py", line 24, in tprint
+    bot.send_message(chat_id, saw,  parse_mode='html' )
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 133, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 525, in send_message
+    return self._message(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 339, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 298, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: unsupported start tag "font" at byte offset 22
+2023-01-27 14:17:20,741 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 14:17:20,742 INFO Scheduler has been shut down
+2023-01-27 14:17:21,037 WARNING Exiting immediately!
+2023-01-27 14:17:22,886 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 14:17:22,982 INFO start_bot
+2023-01-27 14:17:22,984 INFO Scheduler started
+2023-01-27 14:17:26,820 ERROR No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/dispatcher.py", line 557, in process_update
+    handler.handle_update(update, self, check, context)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/ext/handler.py", line 199, in handle_update
+    return self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main.py", line 20, in echo
+    tprint(f'Ваш запрос - <p style="color:#0000FF">{update.message.text}</p> - не понятен для меня')
+  File "/Users/maksimbudanov/Documents/my_git/bot_telegram/my_folder/my_main_bible.py", line 24, in tprint
+    bot.send_message(chat_id, saw,  parse_mode='html' )
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 133, in decorator
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 525, in send_message
+    return self._message(  # type: ignore[return-value]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 339, in _message
+    result = self._post(endpoint, data, timeout=timeout, api_kwargs=api_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/bot.py", line 298, in _post
+    return self.request.post(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 361, in post
+    result = self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/telegram/utils/request.py", line 279, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Can't parse entities: unsupported start tag "p" at byte offset 22
+2023-01-27 14:21:26,478 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 14:21:26,478 INFO Scheduler has been shut down
+2023-01-27 14:21:26,750 WARNING Exiting immediately!
+2023-01-27 14:21:29,428 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 14:21:29,516 INFO start_bot
+2023-01-27 14:21:29,517 INFO Scheduler started
+2023-01-27 14:22:02,702 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 14:22:02,702 INFO Scheduler has been shut down
+2023-01-27 14:22:02,917 WARNING Exiting immediately!
+2023-01-27 14:22:07,329 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 14:22:07,417 INFO start_bot
+2023-01-27 14:22:07,418 INFO Scheduler started
+2023-01-27 14:48:21,735 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 14:48:21,735 INFO Scheduler has been shut down
+2023-01-27 14:48:21,983 WARNING Exiting immediately!
+2023-01-27 15:14:03,973 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 15:14:04,065 INFO start_bot
+2023-01-27 15:14:04,067 INFO Scheduler started
+2023-01-27 15:18:37,512 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 15:18:37,513 INFO Scheduler has been shut down
+2023-01-27 15:18:37,737 WARNING Exiting immediately!
+2023-01-27 15:18:40,978 INFO start_bot
+2023-01-27 15:18:40,979 INFO Scheduler started
+2023-01-27 15:19:09,647 INFO нераспознанный текст d
+2023-01-27 15:19:53,957 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 15:19:53,957 INFO Scheduler has been shut down
+2023-01-27 15:19:54,309 WARNING Exiting immediately!
+2023-01-27 15:19:56,761 INFO start_bot--------------------
+2023-01-27 15:19:56,762 INFO Scheduler started
+2023-01-27 15:20:02,624 INFO нераспознанный текст d
+2023-01-27 15:20:22,421 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 15:20:22,421 INFO Scheduler has been shut down
+2023-01-27 15:20:22,740 WARNING Exiting immediately!
+2023-01-27 15:23:41,246 INFO start_bot--------------------
+2023-01-27 15:23:41,247 INFO Scheduler started
+2023-01-27 15:25:17,922 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 15:25:17,924 INFO Scheduler has been shut down
+2023-01-27 15:25:18,250 WARNING Exiting immediately!
+2023-01-27 15:25:27,753 INFO start_bot--------------------
+2023-01-27 15:25:27,754 INFO Scheduler started
+2023-01-27 15:27:12,290 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 15:27:12,291 INFO Scheduler has been shut down
+2023-01-27 15:27:12,538 WARNING Exiting immediately!
+2023-01-27 15:27:19,833 INFO start_bot--------------------
+2023-01-27 15:27:19,834 INFO Scheduler started
+2023-01-27 15:30:35,161 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 15:30:35,161 INFO Scheduler has been shut down
+2023-01-27 15:30:35,408 WARNING Exiting immediately!
+2023-01-27 15:32:19,051 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 15:32:19,223 INFO start_bot--------------------
+2023-01-27 15:32:19,224 INFO Scheduler started
+2023-01-27 15:33:05,912 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 15:33:05,912 INFO Scheduler has been shut down
+2023-01-27 15:33:06,216 WARNING Exiting immediately!
+2023-01-27 15:33:08,753 INFO ошибка = (1062, "Duplicate entry 'adeeer' for key 'mail'")
+2023-01-27 15:33:08,856 INFO start_bot--------------------
+2023-01-27 15:33:08,858 INFO Scheduler started
+2023-01-27 15:34:44,135 INFO Received signal 2 (SIGINT), stopping...
+2023-01-27 15:34:44,135 INFO Scheduler has been shut down
+2023-01-27 15:34:44,479 WARNING Exiting immediately!
