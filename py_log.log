@@ -148,3 +148,8 @@ TypeError: Message.reply_text() missing 1 required positional argument: 'text'
 2023-01-28 02:57:22,465 INFO Received signal 2 (SIGINT), stopping...
 2023-01-28 02:57:22,466 INFO Scheduler has been shut down
 2023-01-28 02:57:22,760 WARNING Exiting immediately!
+2023-01-28 03:30:53,335 INFO Scheduler started
+2023-01-28 03:31:18,222 INFO 203: пользователь (642411623) запрашивал данные (mail) : результат (ваш запрос: qwerty@mail.ru)
+2023-01-28 03:31:38,774 INFO Received signal 2 (SIGINT), stopping...
+2023-01-28 03:31:38,774 INFO Scheduler has been shut down
+2023-01-28 03:31:39,230 WARNING Exiting immediately!
