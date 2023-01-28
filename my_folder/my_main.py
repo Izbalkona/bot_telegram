@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-import re
+import logging 
 
 import pymysql
 import pymysql.cursors
@@ -15,18 +15,19 @@ from my_settings import *
 
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup
 from telegram.ext import Updater, CallbackContext, CommandHandler, Filters, MessageHandler, BaseFilter, TypeHandler, ConversationHandler
-
+ 
+user_var = 'id'
 def start(update, context):
     # Сразу задаём первый вопрос, а ответ уже смотрим в первом обработчике
     update.message.reply_text("""
-    Бот может выдать данные пользователя:
-    Список поддерживаемых команд:
-    -------------------------------
-    1 - мой mail
-    2 - количество слов на аккаунте
-    -------------------------------
-    В запросе указать номер команды
+    Привет, какую инфромацию ты хочешь получить:
+    ------------------
+    1 - mail
+    2 - количество слов
+    ------------------
+    введи номер запроса
     """)
+    
     # Число-ключ в словаре states ConversationHandler
     # Оно указывает, что дальше на сообщения от этого пользователя должен отвечать обработчик states[1]
     # До этого момента обработчиков текстовых сообщений
@@ -45,6 +46,7 @@ def first_response(update, context: CallbackContext):
             user_var = 'mail'
         elif answer.lower() == '2':
             user_var = 'words'
+        print(user_var)
         return 2
     else:
         update.message.reply_text('Ну, как хочешь...')
@@ -56,6 +58,7 @@ def second_response(update, context: CallbackContext):
     user_name = update.message.chat.id
     user_password = update.message.text
     check_sqlbase(user_name, user_password, user_var)
+    print(user_var)
     # Константа, означающая конец диалога
     # Все обработчики из states и fallbacks становятся неактивными
     return ConversationHandler.END 
@@ -84,16 +87,14 @@ conv_handler = ConversationHandler(
     fallbacks=[CommandHandler('stop', stop)]
 )
 
-
-
 def main() -> None:
     
-    send_photo(bot, chat_id)#отправляет фото
+    #send_photo(bot, chat_id)#отправляет фото
     
     tprint(time_now())#отправляет сообщение
     
     updater = Updater("5718308924:AAGXgGQXUh46_z0QNHJzfO6VVQ3YqOHPBKY") #connect Telegam
-    #logging.info('start_bot'+'-'*20)
+    logging.info('start_bot'+'-'*20)
 
     updis = updater.dispatcher
     
@@ -111,10 +112,9 @@ def main() -> None:
     updater.dispatcher.add_handler(TypeHandler(Update, echo))# должно быть последним
 
 
-    updater.start_polling()
+    updater.start_polling() # цикл
     print('Started')
     updater.idle()
-
-
+       
 if __name__ == "__main__":
     main()
